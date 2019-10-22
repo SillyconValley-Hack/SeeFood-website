@@ -1,22 +1,33 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+  import Header from "../components/Header.svelte";
+  import Footer from "../components/Footer.svelte";
 
-	export let segment;
+  let isLoaded = false;
+
+  let onLoad = () => {
+    isLoaded = true;
+  };
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+<style lang="scss" global>
+  @import "./style/style.scss";
 </style>
 
-<Nav {segment}/>
+<svelte:window on:load={onLoad} />
 
-<main>
-	<slot></slot>
-</main>
+<svelte:head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js">
+
+  </script>
+</svelte:head>
+
+<div class="is-boxed has-animations" class:is-loaded={isLoaded}>
+  <div class="body-wrap boxed-container">
+    <Header />
+    <slot />
+    <Footer />
+  </div>
+</div>

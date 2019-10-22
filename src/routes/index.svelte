@@ -1,46 +1,216 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<script>
+  import Main from "../components/Main.svelte";
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+  let onLoad = () => {
+    const sr = ScrollReveal();
+    sr.reveal(".feature", {
+      duration: 600,
+      distance: "20px",
+      easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      origin: "right",
+      viewFactor: 0.2
+    });
+  };
+</script>
 
-	figure {
-		margin: 0 0 1em 0;
-	}
+<style lang="scss">
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
 
+<svelte:window on:load={onLoad} />
+
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>SeeFood brought by Sillycon Valley</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<Main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title mt-0">Landing template for startups</h1>
+          <p class="hero-paragraph">
+            Our landing page template works on all devices, so you only have to
+            set it up once, and get beautiful results forever.
+          </p>
+          <div class="hero-cta">
+            <a class="button button-primary" href="/">Buy it now</a>
+            <div class="lights-toggle">
+              <input
+                id="lights-toggle"
+                type="checkbox"
+                name="lights-toggle"
+                class="switch"
+                checked="checked" />
+              <label for="lights-toggle" class="text-xs">
+                <span>
+                  Turn me
+                  <span class="label-text">dark</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="header-illustration">
+            <img
+              class="header-illustration-image asset-light"
+              src="images/header-illustration-light.svg"
+              alt="Header illustration" />
+            <img
+              class="header-illustration-image asset-dark"
+              src="images/header-illustration-dark.svg"
+              alt="Header illustration" />
+          </div>
+          <div class="hero-media-illustration">
+            <img
+              class="hero-media-illustration-image asset-light"
+              src="images/hero-media-illustration-light.svg"
+              alt="Hero media illustration" />
+            <img
+              class="hero-media-illustration-image asset-dark"
+              src="images/hero-media-illustration-dark.svg"
+              alt="Hero media illustration" />
+          </div>
+          <div class="hero-media-container">
+            <img
+              class="hero-media-image asset-light"
+              src="images/hero-media-light.svg"
+              alt="Hero media" />
+            <img
+              class="hero-media-image asset-dark"
+              src="images/hero-media-dark.svg"
+              alt="Hero media" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
+  <section class="features section">
+    <div class="container">
+      <div class="features-inner section-inner has-bottom-divider">
+        <div class="features-header text-center">
+          <div class="container-sm">
+            <h2 class="section-title mt-0">The Product</h2>
+            <p class="section-paragraph">
+              Lorem ipsum is common placeholder text used to demonstrate the
+              graphic elements of a document or visual presentation.
+            </p>
+            <div class="features-image">
+              <img
+                class="features-illustration asset-dark"
+                src="images/features-illustration-dark.svg"
+                alt="Feature illustration" />
+              <img
+                class="features-box asset-dark"
+                src="images/features-box-dark.svg"
+                alt="Feature box" />
+              <img
+                class="features-illustration asset-dark"
+                src="images/features-illustration-top-dark.svg"
+                alt="Feature illustration top" />
+              <img
+                class="features-illustration asset-light"
+                src="images/features-illustration-light.svg"
+                alt="Feature illustration" />
+              <img
+                class="features-box asset-light"
+                src="images/features-box-light.svg"
+                alt="Feature box" />
+              <img
+                class="features-illustration asset-light"
+                src="images/features-illustration-top-light.svg"
+                alt="Feature illustration top" />
+            </div>
+          </div>
+        </div>
+        <div class="features-wrap">
+          <div class="feature is-revealing">
+            <div class="feature-inner">
+              <div class="feature-icon">
+                <img
+                  class="asset-light"
+                  src="images/feature-01-light.svg"
+                  alt="Feature 01" />
+                <img
+                  class="asset-dark"
+                  src="images/feature-01-dark.svg"
+                  alt="Feature 01" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-0">Discover</h3>
+                <p class="text-sm mb-0">
+                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  dui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature is-revealing">
+            <div class="feature-inner">
+              <div class="feature-icon">
+                <img
+                  class="asset-light"
+                  src="images/feature-02-light.svg"
+                  alt="Feature 02" />
+                <img
+                  class="asset-dark"
+                  src="images/feature-02-dark.svg"
+                  alt="Feature 02" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-0">Discover</h3>
+                <p class="text-sm mb-0">
+                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  dui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature is-revealing">
+            <div class="feature-inner">
+              <div class="feature-icon">
+                <img
+                  class="asset-light"
+                  src="images/feature-03-light.svg"
+                  alt="Feature 03" />
+                <img
+                  class="asset-dark"
+                  src="images/feature-03-dark.svg"
+                  alt="Feature 03" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-0">Discover</h3>
+                <p class="text-sm mb-0">
+                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  dui.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+  <section class="cta section">
+    <div class="container-sm">
+      <div class="cta-inner section-inner">
+        <div class="cta-header text-center">
+          <h2 class="section-title mt-0">Get it and Switch</h2>
+          <p class="section-paragraph">
+            Lorem ipsum is common placeholder text used to demonstrate the
+            graphic elements of a document or visual presentation.
+          </p>
+          <div class="cta-cta">
+            <a class="button button-primary" href="/">Buy it now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Main>
