@@ -1,6 +1,7 @@
 <script>
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
+  import { lightsOff } from "../store.js";
 
   let isLoaded = false;
 
@@ -24,7 +25,10 @@
   </script>
 </svelte:head>
 
-<div class="is-boxed has-animations" class:is-loaded={isLoaded}>
+<div
+  class="is-boxed has-animations"
+  class:is-loaded={isLoaded}
+  class:lights-off={$lightsOff}>
   <div class="body-wrap boxed-container">
     <Header />
     <slot />

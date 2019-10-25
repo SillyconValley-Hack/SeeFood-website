@@ -1,3 +1,7 @@
+<script>
+  import LightSwitch from "./LightSwitch.svelte";
+</script>
+
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
@@ -8,21 +12,8 @@
           set it up once, and get beautiful results forever.
         </p>
         <div class="hero-cta">
-          <a class="button button-primary" href="/">Buy it now</a>
-          <div class="lights-toggle">
-            <input
-              id="lights-toggle"
-              type="checkbox"
-              name="lights-toggle"
-              class="switch"
-              checked="checked" />
-            <label for="lights-toggle" class="text-xs">
-              <span>
-                Turn me
-                <span class="label-text">dark</span>
-              </span>
-            </label>
-          </div>
+          <a class="button button-primary" href="/">Get it now</a>
+          <LightSwitch />
         </div>
       </div>
       <div class="hero-media">
