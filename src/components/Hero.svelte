@@ -2,15 +2,18 @@
   import LightSwitch from "./LightSwitch.svelte";
 </script>
 
+<style>
+  .hero-media-image {
+    width: 40vw;
+  }
+</style>
+
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-copy">
-        <h1 class="hero-title mt-0">Landing template for startups</h1>
-        <p class="hero-paragraph">
-          Our landing page template works on all devices, so you only have to
-          set it up once, and get beautiful results forever.
-        </p>
+        <h1 class="hero-title mt-0">SeeFood</h1>
+        <p class="hero-paragraph">Shazam for food.</p>
         <div class="hero-cta">
           <a class="button button-primary" href="/">Get it now</a>
           <LightSwitch />
@@ -40,11 +43,11 @@
         <div class="hero-media-container">
           <img
             class="hero-media-image asset-light"
-            src="images/hero-media-light.svg"
+            src="images/hotdog.jpg"
             alt="Hero media" />
           <img
             class="hero-media-image asset-dark"
-            src="images/hero-media-dark.svg"
+            src="images/hotdog.jpg"
             alt="Hero media" />
         </div>
       </div>

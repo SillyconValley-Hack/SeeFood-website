@@ -5,8 +5,9 @@
         <div class="container-sm">
           <h2 class="section-title mt-0">The Product</h2>
           <p class="section-paragraph">
-            Lorem ipsum is common placeholder text used to demonstrate the
-            graphic elements of a document or visual presentation.
+            SeeFood is a mobile application that lets you detect what kind of
+            food is presented in front of you. It currently supports hotdog
+            detection and maybe only hotdog forever.
           </p>
           <div class="features-image">
             <img
@@ -15,7 +16,7 @@
               alt="Feature illustration" />
             <img
               class="features-box asset-dark"
-              src="images/features-box-dark.svg"
+              src="images/hotdog2.jpg"
               alt="Feature box" />
             <img
               class="features-illustration asset-dark"
@@ -27,7 +28,7 @@
               alt="Feature illustration" />
             <img
               class="features-box asset-light"
-              src="images/features-box-light.svg"
+              src="images/hotdog2.jpg"
               alt="Feature box" />
             <img
               class="features-illustration asset-light"
@@ -50,10 +51,11 @@
                 alt="Feature 01" />
             </div>
             <div class="feature-content">
-              <h3 class="feature-title mt-0">Discover</h3>
+              <h3 class="feature-title mt-0">Website</h3>
               <p class="text-sm mb-0">
-                Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua dui.
+                The website is built on top of Sapper. Please take a look at
+                <a href="https://sapper.svelte.dev/">Sapper</a>
+                .
               </p>
             </div>
           </div>
@@ -71,10 +73,11 @@
                 alt="Feature 02" />
             </div>
             <div class="feature-content">
-              <h3 class="feature-title mt-0">Discover</h3>
+              <h3 class="feature-title mt-0">Mobile Application</h3>
               <p class="text-sm mb-0">
-                Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua dui.
+                The mobile application is built with Flutter. Check out
+                <a href="https://flutter.dev/">flutter.dev</a>
+                .
               </p>
             </div>
           </div>
@@ -92,10 +95,18 @@
                 alt="Feature 03" />
             </div>
             <div class="feature-content">
-              <h3 class="feature-title mt-0">Discover</h3>
+              <h3 class="feature-title mt-0">Backend</h3>
               <p class="text-sm mb-0">
-                Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua dui.
+                We have a
+                <a href="https://www.djangoproject.com/">Django</a>
+                server running as an API server. For image recognition, we have
+                one built with
+                <a href="https://pytorch.org/">Pytorch</a>
+                and the other using
+                <a href="https://www.google.com.tw/imghp">
+                  Google's search by image
+                </a>
+                .
               </p>
             </div>
           </div>

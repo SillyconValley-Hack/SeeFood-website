@@ -64,7 +64,7 @@
         </li>
       </ul>
       <div class="footer-copyright">
-        &copy; 2018 Switch, all rights reserved
+        &copy; 2019 Sillycon Valley, all rights reserved
       </div>
     </div>
   </div>
